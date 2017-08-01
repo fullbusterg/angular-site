@@ -8,8 +8,12 @@
     <title>First Angular Js App</title>
   </head>
   <body>
+      <h1>My First Angular App</h1>
       <div name="nameCalculator" ng-controller="MyFirstController">
-
+          {{name}}<br/>
+          {{sayHello()}}<br/>
+          <input ng-model="name" type="text" />
+          Inside my Input is: {{name}}
       </div>
   </body>
 </html>

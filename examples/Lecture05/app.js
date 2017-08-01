@@ -8,8 +8,13 @@
 
     //for controller, is really the way the view model of our view is define, and takes two things
     //one, name of our view model or controller, and takes a function that define the function of our particular controller
-    .controller('MyFirstController', function() {
+    //scope is a special object angular provide for us in order to share data btw our view model and our view
+    .controller('MyFirstController', function($scope) {
+        $scope.name = "Ibrahim";
 
+        $scope.sayHello = function() {
+            return "Say Hello Ibrahim";
+        };
     });
 
 })();//we called it IIFE meaning, imediate invoke function expression, making sure that no local variables bleed into the global scope

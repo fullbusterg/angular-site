@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='DIApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Dependency Injection in Javascript
+           (and AngularJS)</title>
+  </head>
+  <body>
+    <h1>Dependency Injection in Javascript
+        (and AngularJS)</h1>
+    <div ng-controller='DIController'>
+      <input type="text"
+             ng-model="name"
+             ng-blur="upper();">
+        <ul>
+            <li>Minification - process of reducing size of js
+                <ul>
+                    <li>Remove Extral characters</li>
+                </ul>
+            </li>
+            <li>DI in angular need to be minification proof</li>
+            <li>2 method are involve
+                <ul>
+                    <li>Inline array with function has last element</li>
+                    <li>Attach $inject property to the function object, and this is more elegant way</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+  </body>
+</html>
